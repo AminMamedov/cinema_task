@@ -1,0 +1,26 @@
+#cinemaMainCardss{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 30px;
+}
+
+#detailCard{
+    margin-top: 70px;
+    width: 90%;
+    height: 590px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    
+}
+#imageText{
+    width: 900px;
+}
+#image{
+    width: 45%;
+    padding: 20px;
+}
+#text{
+    width: 45%;
+    height: 40%;
+}
