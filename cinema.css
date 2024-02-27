@@ -6,21 +6,26 @@
 
 #detailCard{
     margin-top: 70px;
-    width: 90%;
+    width: 1700px;
     height: 590px;
     display: flex;
     align-content: center;
     justify-content: space-around;
     
 }
+#detaillll{
+    height: 850px;
+    width: 1300px;
+}
 #imageText{
     width: 900px;
+    height: 80%;
 }
 #image{
-    width: 45%;
-    padding: 20px;
+    width: 60%;
+    padding: 30px;
 }
 #text{
-    width: 45%;
+    width: 40%;
     height: 40%;
 }
