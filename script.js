@@ -11,7 +11,7 @@ window.onload = async () => {
     let parent = document.getElementById("cinemaMainCardss")
     moviess.forEach(movie => {
         parent.innerHTML += `
-        <div class="card" style="width: 18rem;">
+        <div class="card" style="width: 18rem;" >
 <img src="${movie.image["medium"]}" class="card-img-top" alt="...">
 <div class="card-body">
   <h5 class="card-title">Movie Name: ${movie["name"]}</h5>
@@ -23,7 +23,7 @@ window.onload = async () => {
 </ul>
 <div class="card-body">
   <a href="${movie["officialSite"]}" class="card-link">Go to website</a>
-  <a href="detail.html" class="card-link">Another link</a>
+  <a href="detail.html?detailid=${movie["id"]}" class="card-link">Another link</a>
 </div>
 </div>
         
