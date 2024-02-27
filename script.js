@@ -8,8 +8,16 @@ fetch("https://api.tvmaze.com/shows")
     searchBtn.addEventListener('click', function (e) {
       e.preventDefault();
       let text = document.getElementById("searchimput").value.toLowerCase().trim();
-      console.log("ovveride", text);
+      if(text.length<3) {
+        alert("Please enter more character.");
+        return;
+      }
       let overData = data.filter(movie => movie.name.toLowerCase().includes(text));
+      if(overData.length === 0) {
+        alert("Movie is not found.");
+        return;
+        
+      }
       isSearch = true;
       showMovies(overData);
     });
@@ -36,6 +44,7 @@ fetch("https://api.tvmaze.com/shows")
           </div>
       </div>`
       });
+      
     };
 
     if (isSearch===false) {
