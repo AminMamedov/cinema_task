@@ -14,8 +14,9 @@
     
 }
 #detaillll{
-    height: 850px;
-    width: 1300px;
+    height: 900px;
+    width: 1000px;
+    box-shadow: 0 0 10px 5px gray;
 }
 #imageText{
     width: 900px;
@@ -29,3 +30,19 @@
     width: 40%;
     height: 40%;
 }
+.pagination {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  .pagination li {
+    margin-right: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+  }
+  .pagination li.active {
+    background-color: #4CAF50;
+    color: white;
+  }

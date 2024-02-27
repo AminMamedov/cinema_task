@@ -23,8 +23,8 @@ fetch(`https://api.tvmaze.com/shows/${id}`)
                     <li>Premiered: ${data.premiered}</li>
                     <li>Ended: ${data.ended}</li>
                   </ul>
-                  <button><a href="${data.officialSite}">Go to website</a></button>
-                  <button><a href="cinema.html">Go back</a></button>
+                  <button style="background-color: rgb(47, 143, 47);border-radius: 10px;"><a href="${data.officialSite}" style="color: white;text-decoration: none;"   >Go to website</a></button>
+                  <button style="background-color: rgb(69, 69, 223);border-radius: 10px;""><a href="cinema.html" style="color: white;text-decoration: none;">Go back</a></button>
 
 
                 </div>
